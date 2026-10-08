@@ -19,7 +19,6 @@ interface UpsellRFEFProps {
 
 export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
   const [secondsLeft, setSecondsLeft] = useState(899); // 14:59 for urgency
-  const [hotmartLoaded, setHotmartLoaded] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -40,9 +39,6 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
       if (checkoutElements && target) {
         try {
           checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
-          if (target.children.length > 0) {
-            setHotmartLoaded(true);
-          }
         } catch (err) {
           console.error("Hotmart salesFunnel init/mount error:", err);
         }
@@ -70,22 +66,10 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
 
     mountHotmart();
 
-    const interval = setInterval(() => {
-      if (!mounted) return;
-      const target = document.getElementById('hotmart-sales-funnel');
-      if (target && target.children.length > 0) {
-        setHotmartLoaded(true);
-        clearInterval(interval);
-      } else {
-        mountHotmart();
-      }
-    }, 400);
-
-    const timer = setTimeout(() => clearInterval(interval), 8000);
+    const timer = setTimeout(mountHotmart, 300);
 
     return () => {
       mounted = false;
-      clearInterval(interval);
       clearTimeout(timer);
     };
   }, []);
@@ -234,32 +218,15 @@ export default function UpsellRFEF({ onAccept, onDecline }: UpsellRFEFProps) {
           {/* ================= 5. CTA & HOTMART FUNNEL ================= */}
           <div className="pt-2 space-y-3">
             
-            {/* HOTMART CONTAINER (IF ACTIVE IN PRODUCTION) */}
-            <div className="w-full flex justify-center items-center">
-              <div id="hotmart-sales-funnel" className="w-full flex justify-center items-center min-h-[50px]"></div>
+            {/* <!-- HOTMART - Sales Funnel Widget --> */}
+            {/* <!--- sales funnel container ---> */}
+            <div className="w-full flex justify-center items-center my-2">
+              <div 
+                id="hotmart-sales-funnel" 
+                className="w-full min-h-[60px] flex justify-center items-center"
+              ></div>
             </div>
-
-            {/* DIRECT ACTION BUTTON (Fallback & Interactive preview) */}
-            {!hotmartLoaded && (
-              <div className="flex flex-col items-center space-y-3 pt-1">
-                <button
-                  type="button"
-                  onClick={onAccept}
-                  className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#E61E05] via-orange-600 to-amber-500 hover:brightness-110 text-white font-[900] text-sm sm:text-base md:text-lg uppercase tracking-wide shadow-xl shadow-orange-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2.5 cursor-pointer text-center"
-                >
-                  <span>SÍ, AGREGAR 100 EJERCICIOS DE FINALIZACIONES POR SOLO 9 €</span>
-                  <ArrowRight className="h-5 w-5 flex-shrink-0" />
-                </button>
-
-                <button
-                  type="button"
-                  onClick={onDecline}
-                  className="text-xs sm:text-sm text-slate-400 hover:text-slate-600 underline font-medium cursor-pointer transition-colors text-center py-1"
-                >
-                  No gracias, prefiero perder esta oferta única de finalizaciones por solo 9 €
-                </button>
-              </div>
-            )}
+            {/* <!-- HOTMART - Sales Funnel Widget --> */}
 
             {/* TRUST BADGES ROW (DEBAJO DEL WIDGET) */}
             <div className="border-t border-slate-200 mt-4 pt-4">
