@@ -20,7 +20,7 @@ export default function App() {
 
   // Shared countdown ticking sync
   useEffect(() => {
-    document.title = "100 Ejercicios de Finalizaciones en Fútbol - 9 € (-95%)";
+    document.title = "+200 Ejercicios de Finalización y Velocidad - 9 € (-95%)";
     const timer = setInterval(() => {
       setTimeLeftSticky((prev) => {
         if (prev <= 1) {
@@ -72,7 +72,7 @@ export default function App() {
                 <CheckCircle2 className="h-10 w-10" />
               </div>
               <span className="text-xs font-mono font-bold text-emerald-600 uppercase tracking-widest block">
-                {viewMode === 'thankyou_accepted' ? '¡PEDIDO COMPLETO CON EL PACK DE FINALIZACIONES!' : '¡PEDIDO CONFIRMADO CON ÉXITO!'}
+                {viewMode === 'thankyou_accepted' ? '¡PEDIDO COMPLETO CON EL PACK DE FINALIZACIÓN Y VELOCIDAD!' : '¡PEDIDO CONFIRMADO CON ÉXITO!'}
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
                 ¡Gracias por tu confianza!
@@ -86,7 +86,7 @@ export default function App() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-left space-y-4">
               <p className="text-xs font-bold text-slate-500 uppercase tracking-widest border-b border-slate-200 pb-2.5 flex items-center justify-between">
                 <span>Resumen de tu pedido</span>
-                <span className="text-orange-600 font-mono text-[10px]">REF: FINALIZACIONES-99</span>
+                <span className="text-orange-600 font-mono text-[10px]">REF: FINALIZACION-VELOCIDAD-99</span>
               </p>
               <ul className="space-y-3 text-xs sm:text-sm">
                 <li className="flex justify-between items-center text-slate-800">
@@ -101,7 +101,7 @@ export default function App() {
                   <li className="flex justify-between items-center text-amber-900 bg-amber-500/10 border border-amber-500/30 p-2.5 rounded-xl">
                     <div className="flex items-center gap-2">
                       <Sparkles className="h-4 w-4 text-amber-600 flex-shrink-0 animate-pulse" />
-                      <span className="font-bold text-slate-900">100 Ejercicios de Finalizaciones en Fútbol</span>
+                      <span className="font-bold text-slate-900">+200 Ejercicios de Finalización y Velocidad en Fútbol</span>
                     </div>
                     <span className="font-black font-mono text-orange-600 whitespace-nowrap">9 €</span>
                   </li>
@@ -109,7 +109,7 @@ export default function App() {
                   <li className="flex justify-between items-center text-slate-400 italic p-1 border-t border-slate-200 pt-2.5">
                     <div className="flex items-center gap-2">
                       <span className="text-slate-400">✕</span>
-                      <span>100 Ejercicios de Finalizaciones en Fútbol</span>
+                      <span>+200 Ejercicios de Finalización y Velocidad en Fútbol</span>
                     </div>
                     <span className="text-[10px] uppercase font-mono tracking-widest font-bold text-slate-400">No incluido</span>
                   </li>
@@ -137,7 +137,7 @@ export default function App() {
                     className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:brightness-110 text-white font-black text-xs uppercase tracking-widest transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg animate-pulse"
                   >
                     <Download className="h-4 w-4" />
-                    <span>Descargar 100 Ejercicios de Finalizaciones en Fútbol</span>
+                    <span>Descargar +200 Ejercicios de Finalización y Velocidad en Fútbol</span>
                   </button>
                 )}
               </div>

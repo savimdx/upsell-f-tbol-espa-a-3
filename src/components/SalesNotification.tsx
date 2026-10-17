@@ -12,49 +12,49 @@ const SALE_NOTIFICATIONS: SaleItem[] = [
   {
     name: "Carlos M.",
     location: "Madrid, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 2 min"
   },
   {
     name: "Javier S.",
     location: "Barcelona, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 4 min"
   },
   {
     name: "Alejandro R.",
     location: "Valencia, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 7 min"
   },
   {
     name: "Pablo G.",
     location: "Sevilla, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 1 min"
   },
   {
     name: "Marcos V.",
     location: "Bilbao, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 5 min"
   },
   {
     name: "Mateo D.",
     location: "Zaragoza, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 11 min"
   },
   {
     name: "Diego H.",
     location: "Málaga, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 8 min"
   },
   {
     name: "Álvaro F.",
     location: "La Coruña, España",
-    product: "+100 Ejercicios de Finalizaciones",
+    product: "+200 Ejercicios de Finalización y Velocidad",
     time: "hace 3 min"
   }
 ];

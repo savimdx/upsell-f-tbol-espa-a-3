@@ -1,9 +1,9 @@
 import { Bonus, Plan, ExampleExercise, Testimonial, FAQItem } from './types';
 
 export const HERO_COPY = {
-  superTitle: "🔥 ESTÁS A UN CLIC DE MULTIPLICAR LOS GOLES DE TU EQUIPO",
-  mainTitle: "+100 Ejercicios de Finalizaciones en Fútbol",
-  subTitle: "Accede de inmediato a la colección práctica de remates, definición y gol más completa. Diseña tareas de finalización en 5 minutos, mejora la puntería de tus delanteros de cara a portería y asegura victorias.",
+  superTitle: "🔥 ESTÁS A UN CLIC DE MULTIPLICAR LA VELOCIDAD Y LOS GOLES DE TU EQUIPO",
+  mainTitle: "+200 Ejercicios de Finalización y Velocidad en Fútbol",
+  subTitle: "Accede de inmediato a la colección práctica de remates, definición, aceleración y velocidad explosiva más completa. Diseña tareas dinámicas en 5 minutos, potencia el físico y la puntería de tus jugadores y asegura victorias.",
   ctaText: "QUIERO ACCEDER AHORA POR SOLO 9 €",
   urgencyLabel: "⚡ Oferta única de lanzamiento disponible por tiempo limitado (-95% dto.)",
   trustBadges: [
@@ -16,11 +16,11 @@ export const HERO_COPY = {
 
 export const WHAT_YOU_GET_COPY = {
   title: "¿Qué Recibirás al Añadir Este Pack Hoy?",
-  subtitle: "Un sistema paso a paso, visual y directo al grano con tareas que desarrollan instinto asesino en el área rival.",
+  subtitle: "Un sistema paso a paso, visual y directo al grano con tareas que desarrollan velocidad punta e instinto goleador en el área rival.",
   items: [
     {
-      title: "Más de 100 Ejercicios de Finalización Específicos",
-      desc: "Estructurados con explicaciones claras, variantes, tiempos, espacios y materiales para entrenar el gol.",
+      title: "Más de 200 Ejercicios de Finalización y Velocidad",
+      desc: "Estructurados con explicaciones claras, variantes, tiempos, espacios y materiales para entrenar el gol y la aceleración.",
       badge: "El Material Principal"
     },
     {
