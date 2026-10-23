@@ -4,7 +4,7 @@ export const HERO_COPY = {
   superTitle: "🔥 ESTÁS A UN CLIC DE MULTIPLICAR LA VELOCIDAD Y LOS GOLES DE TU EQUIPO",
   mainTitle: "+200 Ejercicios de Finalización y Velocidad en Fútbol",
   subTitle: "Accede de inmediato a la colección práctica de remates, definición, aceleración y velocidad explosiva más completa. Diseña tareas dinámicas en 5 minutos, potencia el físico y la puntería de tus jugadores y asegura victorias.",
-  ctaText: "QUIERO ACCEDER AHORA POR SOLO $5.90",
+  ctaText: "QUIERO ACCEDER AHORA POR SOLO MX$135.72",
   urgencyLabel: "⚡ Oferta única de lanzamiento disponible por tiempo limitado (-95% dto.)",
   trustBadges: [
     "Descarga en PDF",
