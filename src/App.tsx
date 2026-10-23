@@ -20,7 +20,7 @@ export default function App() {
 
   // Shared countdown ticking sync
   useEffect(() => {
-    document.title = "+200 Ejercicios de Finalización y Velocidad - 9 € (-95%)";
+    document.title = "+200 Ejercicios de Finalización y Velocidad - $5.90 (-95%)";
     const timer = setInterval(() => {
       setTimeLeftSticky((prev) => {
         if (prev <= 1) {
@@ -103,7 +103,7 @@ export default function App() {
                       <Sparkles className="h-4 w-4 text-amber-600 flex-shrink-0 animate-pulse" />
                       <span className="font-bold text-slate-900">+200 Ejercicios de Finalización y Velocidad en Fútbol</span>
                     </div>
-                    <span className="font-black font-mono text-orange-600 whitespace-nowrap">9 €</span>
+                    <span className="font-black font-mono text-orange-600 whitespace-nowrap">$5.90</span>
                   </li>
                 ) : (
                   <li className="flex justify-between items-center text-slate-400 italic p-1 border-t border-slate-200 pt-2.5">
